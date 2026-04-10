@@ -1,7 +1,9 @@
-package org.example;
+package org.example.restaurant;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.example.order.Pedido;
 
 /**
  * Clase que representa una mesa del restaurante.

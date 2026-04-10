@@ -1,4 +1,4 @@
-package org.example;
+package org.example.payment;
 
 /**
  * Clase que representa una tarjeta de crédito.

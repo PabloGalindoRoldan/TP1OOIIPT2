@@ -1,4 +1,8 @@
-package org.example;
+package org.example.order;
+
+import org.example.menu.MenuItem;
+import org.example.menu.Bebida;
+import org.example.menu.Plato;
 
 /**
  * Clase que representa una línea de un pedido (item + cantidad).

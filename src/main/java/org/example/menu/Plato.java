@@ -1,4 +1,4 @@
-package org.example;
+package org.example.menu;
 
 /**
  * Clase que representa un plato principal del menú.

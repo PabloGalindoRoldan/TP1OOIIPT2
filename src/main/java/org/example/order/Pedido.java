@@ -1,7 +1,12 @@
-package org.example;
+package org.example.order;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.example.menu.MenuItem;
+import org.example.menu.Bebida;
+import org.example.menu.Plato;
+import org.example.payment.TarjetaCredito;
 
 /**
  * Clase que representa un pedido realizado en una mesa.

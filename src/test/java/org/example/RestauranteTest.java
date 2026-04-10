@@ -5,6 +5,15 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.example.restaurant.Restaurante;
+import org.example.restaurant.Mesa;
+import org.example.order.Pedido;
+import org.example.order.LineaPedido;
+import org.example.menu.Bebida;
+import org.example.menu.Plato;
+import org.example.payment.TarjetaCredito;
+import org.example.payment.TipoTarjeta;
+
 /**
  * Tests exhaustivos para el sistema de cálculo de costos del restaurante.
  */

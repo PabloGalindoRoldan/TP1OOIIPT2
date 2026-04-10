@@ -1,5 +1,16 @@
 package org.example;
 
+import org.example.restaurant.Restaurante;
+import org.example.restaurant.Mesa;
+import org.example.order.Pedido;
+import org.example.menu.Cerveza;
+import org.example.menu.Jugo;
+import org.example.menu.Asado;
+import org.example.menu.Pizza;
+import org.example.menu.Pasta;
+import org.example.payment.TarjetaCredito;
+import org.example.payment.TipoTarjeta;
+
 /**
  * Ejemplo de uso del sistema de cálculo de costos del restaurante.
  */
@@ -9,14 +20,14 @@ public class Main {
         Restaurante restaurante = new Restaurante("La Pizzería del Barrio");
         
         // Agregar bebidas al menú
-        restaurante.agregarBebida(new Bebida("Cerveza", 5.00));
-        restaurante.agregarBebida(new Bebida("Jugo de Naranja", 3.00));
-        restaurante.agregarBebida(new Bebida("Vino Tinto", 8.00));
+        restaurante.agregarBebida(new Cerveza("Cerveza", 5.00));
+        restaurante.agregarBebida(new Jugo("Jugo de Naranja", 3.00));
+        restaurante.agregarBebida(new Cerveza("Vino Tinto", 8.00));
         
         // Agregar platos principales al menú
-        restaurante.agregarPlato(new Plato("Asado", 25.00));
-        restaurante.agregarPlato(new Plato("Pizza Margherita", 15.00));
-        restaurante.agregarPlato(new Plato("Pasta Carbonara", 18.00));
+        restaurante.agregarPlato(new Asado("Asado", 25.00));
+        restaurante.agregarPlato(new Pizza("Pizza Margherita", 15.00));
+        restaurante.agregarPlato(new Pasta("Pasta Carbonara", 18.00));
         
         System.out.println("=== SIMULACIÓN DE RESTAURANTE ===\n");
         
@@ -124,33 +135,3 @@ public class Main {
     }
 }
 
-// Clases auxiliares que extienden Bebida y Plato para el ejemplo
-class Cerveza extends Bebida {
-    public Cerveza(String nombre, double precio) {
-        super(nombre, precio);
-    }
-}
-
-class Jugo extends Bebida {
-    public Jugo(String nombre, double precio) {
-        super(nombre, precio);
-    }
-}
-
-class Asado extends Plato {
-    public Asado(String nombre, double precio) {
-        super(nombre, precio);
-    }
-}
-
-class Pizza extends Plato {
-    public Pizza(String nombre, double precio) {
-        super(nombre, precio);
-    }
-}
-
-class Pasta extends Plato {
-    public Pasta(String nombre, double precio) {
-        super(nombre, precio);
-    }
-}

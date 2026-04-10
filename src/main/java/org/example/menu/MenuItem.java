@@ -1,4 +1,4 @@
-package org.example;
+package org.example.menu;
 
 /**
  * Clase abstracta que representa un elemento del menú.

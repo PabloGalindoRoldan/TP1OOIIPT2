@@ -1,4 +1,4 @@
-package org.example;
+package org.example.payment;
 
 /**
  * Enum que representa los tipos de tarjeta de crédito soportados.

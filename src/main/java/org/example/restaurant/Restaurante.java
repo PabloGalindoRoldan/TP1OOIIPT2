@@ -1,9 +1,13 @@
-package org.example;
+package org.example.restaurant;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import org.example.menu.Bebida;
+import org.example.menu.Plato;
+import org.example.menu.MenuItem;
 
 /**
  * Clase que representa el restaurante con sus mesas y menú.
