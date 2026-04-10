@@ -7,6 +7,7 @@ import org.example.menu.MenuItem;
 import org.example.menu.Bebida;
 import org.example.menu.Plato;
 import org.example.payment.TarjetaCredito;
+import org.example.registro.ArchivoRegistroCosto;
 
 /**
  * Clase que representa un pedido realizado en una mesa.
@@ -16,12 +17,14 @@ public class Pedido {
     private boolean confirmado;
     private TarjetaCredito tarjetaCredito;
     private double porcentajePropina;
+    private ArchivoRegistroCosto registro;
 
     public Pedido() {
         this.lineas = new ArrayList<>();
         this.confirmado = false;
         this.tarjetaCredito = null;
         this.porcentajePropina = 0;
+        this.registro = new ArchivoRegistroCosto("registro_costos.txt");
     }
 
     /**
@@ -50,6 +53,9 @@ public class Pedido {
         this.tarjetaCredito = tarjeta;
         this.porcentajePropina = porcentajePropina;
         this.confirmado = true;
+
+        //Registrar el costo:
+        this.registro.registrarCosto(getTotal());
     }
 
     public boolean isConfirmado() {

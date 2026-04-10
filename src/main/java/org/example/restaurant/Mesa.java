@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.example.order.Pedido;
+import org.example.registro.RegistroDeCosto;
 
 /**
  * Clase que representa una mesa del restaurante.
@@ -13,6 +14,7 @@ public class Mesa {
     private int capacidad;
     private List<String> comensales;
     private Pedido pedidoActual;
+
 
     public Mesa(int numero, int capacidad) {
         if (numero <= 0) {
